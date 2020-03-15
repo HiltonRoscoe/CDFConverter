@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON2XML</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="lib/codemirror/codemirror.css" />
+  <script src="lib/codemirror/codemirror.js"></script>
+  <script src="lib/codemirror/javascript.js"></script>
+  <script src="lib/codemirror/xml.js"></script>
+  <script type="text/javascript" src="./lib/Saxon-JS/SaxonJS.min.js"><!--placeholder--></script>
+  <script>
+      window.onload = function () {
+        // initialize the input area
+        var inputArea = document.getElementById("cdf-input")
+        var inputEditor = CodeMirror.fromTextArea(inputArea, {
+          lineNumbers: true,
+          mode: "application/json",
+          matchBrackets: true
+        });
+
+        // add handler for upload button
+        loadFile = (input) => {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            editor.setValue(e.target.result);
+          }
+          reader.readAsText(input.files[0]);
+        }
+        // wire up handler
+        var uploadBtn = document.getElementById("uploadBtn");
+        uploadBtn.onclick = loadFile;
+
+        // code for generating XML output
+        var htmlOutput = document.getElementById("cdf-output");
+        var outputEditor = CodeMirror.fromTextArea(htmlOutput, {
+          lineNumbers: true,
+          mode: "text/xml",
+          matchBrackets: true
+        });
+
+        var cb = function (fragment) {
+          // console.log(fragment);
+          var div = document.createElement('div');
+          div.appendChild(fragment.cloneNode(true));
+          // console.log(div.innerHTML);
+          // replace existing output content
+          outputEditor.setValue(div.innerHTML);
+        }
+        var transform = () => {
+          // wrap the JSON in XML, as required by XSLT transform
+          let wrappedJson = `<root xmlns="http://www.w3.org/2005/xpath-functions">${inputEditor.getValue()}</root>`;
+          let formatSef = {
+            "errv20": {
+              "json2xml": "errv2_json2xml.sef",
+              "jsonschema": "",
+            },
+            "cvrv10": {
+              "json2xml": "cvrv1_json2xml.sef"
+            },
+            "eelv10": {
+              "json2xml": "eelv1_json2xml.sef"
+            }
+          };
+          inputFormatDom = document.getElementById("inputFormatSel");
+          inputFormat = formatSef[inputFormatDom.value].json2xml;          
+          SaxonJS.transform({
+            // sourceLocation: "xslt/err_xml2json_out.xml",
+            sourceText: wrappedJson,
+            stylesheetLocation: `xslt/${inputFormat}`,
+            initialTemplate: "startitoff",
+            destination: "application"
+          }, cb);
+        };
+        var transformBtn = document.getElementById("transformBtn");
+        transformBtn.onclick = transform;
+
+      }   
+  </script>
+</head>
+
+<body>
+  <input type="button" id="uploadBtn" value="Upload" />
+  <input type="button" id="transformBtn" value="Transform" />
+  <select id="inputFormatSel">
+    <option value="#">Select CDF</option>
+    <option value="errv20">Election Results Reporting (2.0)</option>
+    <option value="cvrv10">Cast Vote Records (1.0)</option>
+    <option value="errv10">Election Event Logging (1.0)</option>
+  </select>
+  <div class="input">
+    <p>CDF Input</p>
+    <textarea id="cdf-input"></textarea>
+  </div>
+  <span>Output</span>
+  <div class="output">
+    <p>CDF Output</p>
+    <textarea id="cdf-output"></textarea>
+  </div>
+</body>
+
+</html>
