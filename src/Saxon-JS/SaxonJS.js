@@ -16138,20 +16138,21 @@ var Numberer = (function () {
 
     Big = bigFactory();
 
+    
     //AMD.
-    if (typeof define === 'function' && define.amd) {
-        define(function () {
-            return Big;
-        });
-
-        // Node and other CommonJS-like environments that support module.exports.
-    } else if (typeof module !== 'undefined' && module.exports) {
-        module.exports = Big;
+//    if (typeof define === 'function' && define.amd) {
+//        define(function () {
+//            return Big;
+//        });
+//
+//        // Node and other CommonJS-like environments that support module.exports.
+//    } else if (typeof module !== 'undefined' && module.exports) {
+//        module.exports = Big;
 
         //Browser.
-    } else {
+   // } else {
         global.Big = Big;
-    }
+   // }
 })(this);
 var ConvertJson = (function() {
 
@@ -17212,8 +17213,8 @@ var XPath = (function () {
         } else {
             // Currently only Nashorn. (Later need to distinguish from Node case)
             // Nashorn JSTestDriver
-            setPlatform(JSTestDriver.platform);
-            saxonPrint("Saxon-JS " + getProcessorInfo().productVersion + " in Nashorn");
+            //setPlatform(JSTestDriver.platform);
+            //saxonPrint("Saxon-JS " + getProcessorInfo().productVersion + " in Nashorn");
 
             // node NodePlatform
         }
@@ -18160,3 +18161,4 @@ var XPath = (function () {
     };
 
 })();
+module.exports = SaxonJS;
