@@ -7,7 +7,7 @@ module.exports = {
     mode: "development",
     output: {
         filename: 'cdfconverter.js',
-        path: `${__dirname}/lib`
+        path: `${__dirname}/docs`
     },
     module: {
         rules: [
