@@ -1,12 +1,14 @@
-import * as CodeMirror from "codemirror";
 import * as ko from "knockout";
 import { CdfTransformer } from "./cdftransformer";
+import "./_sass/jekyll-theme-tactile.scss";
+import { Message } from "./message";
 
 class CdfConverterViewModel {
     supportedFormats: ko.ObservableArray<any>
     commonDataFormat: ko.Observable<string>
     inputText: ko.Observable<string>
     outputText: ko.Observable<string>
+    messages: ko.ObservableArray<Message>
     transform() {
         let formatSef = {
             "errv20": {
@@ -23,39 +25,36 @@ class CdfConverterViewModel {
         let that = this;
         //incoming data from SaxonJS
         var cb = function (fragment: any) {
-            console.log(new Date())
             // have to convert to string?
             var div = document.createElement('div');
             div.appendChild(fragment.cloneNode(true));
             // replace existing output content
-            //outputEditor.setValue(div.innerHTML);
             that.outputText(div.innerHTML);
-            console.log(new Date())
+            that.messages.unshift(new Message("Conversion completed."));
         }
         const inputFormat = formatSef[this.commonDataFormat()].json2xml;
+        this.messages.unshift(new Message("Conversion started."));
         CdfTransformer.transform(this.inputText(), inputFormat, cb);
     }
     constructor() {
-        //this.supportedFormatsNames = ko.observableArray(["Election Results Reporting v2.0", "Cast Vote Records v1.0"]);
-        this.supportedFormats = ko.observableArray([{ name: "Election Results Reporting v2.0", value: "errv20" }, { name: "Cast Vote Records v1.0", value: "cvrv10" }]);
+        this.supportedFormats = ko.observableArray([{ name: "Cast Vote Records v1.0", value: "cvrv10" }, { name: "Election Results Reporting v2.0", value: "errv20" }]);
         this.commonDataFormat = ko.observable<string>("");
-        this.inputText = ko.observable<string>("content here");
-        this.outputText = ko.observable<string>("output here");
+        this.inputText = ko.observable<string>("");
+        this.outputText = ko.observable<string>("");
+        this.messages = ko.observableArray([new Message("Tool initialized.")]);
     }
 }
 
-
 window.onload = () => {
-    // initialize the input area
-    //   const inputArea = document.getElementById("cdf-input") as HTMLTextAreaElement;
-
-    //  var inputEditor = CodeMirror.fromTextArea(inputArea, {
-    //      lineNumbers: true,
-    //      mode: "application/json"
-    //  });
-
-    ko.applyBindings(new CdfConverterViewModel());
-
+    const vm = new CdfConverterViewModel();
+    ko.applyBindings(vm);
+    // SaxonJS will not invoke callback if there is an error in input
+    // so we must catch the uncaught error and inform user
+    window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
+        vm.messages.unshift(new Message(errorMsg.toString(), "error"));
+        vm.messages.unshift(new Message("Conversion terminated."));
+        return false;
+    }
     // add handler for upload button
     // const loadFile = (input: any) => {
     //     var reader = new FileReader();
@@ -67,12 +66,4 @@ window.onload = () => {
     // wire up handler
     // var uploadBtn = document.getElementById("uploadBtn");
     // uploadBtn.onclick = loadFile;
-
-    // code for generating XML output
-    //   var htmlOutput = document.getElementById("cdf-output") as HTMLTextAreaElement;
-    //   var outputEditor = CodeMirror.fromTextArea(htmlOutput, {
-    //       lineNumbers: true,
-    //       mode: "text/xml"
-    //   });
-
 };

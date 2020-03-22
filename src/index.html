@@ -7,40 +7,49 @@
 </head>
 
 <body>
-  <div id="container">
-    <h1>CDF Converter</h1>
-    <hr />
-    <section>
-      <p>This tool allows a user to convert a NIST Common Data Format file from JSON to XML. More background on the
-        process is available here.</p>
-    </section>
-    <section id="tool">
-      <div id="controlPanel">
-        <input type="button" id="uploadBtn" value="Upload" />
-        <input type="button" id="transformBtn" value="Transform" data-bind="click: transform" />
-        <input type="button" value="Load sample" />
-      </div>
-      <div id="transformOptions">
-        <label for="inputLanguageSel">Input Language</label>
-        <select id="inputLanguageSel">
-          <option value="json">JSON</option>
-        </select>
-        <label for="inputFormatSel">Input CDF</label>
-        <select id="inputFormatSel"
-          data-bind="options: supportedFormats, optionsText: 'name', optionsValue: 'value', value: commonDataFormat"></select>
-      </div>
-      <div class="input">
-        <p>CDF Input</p>
-        <textarea id="cdf-input" data-bind="value: inputText"></textarea>
-      </div>
-      <div class="output">
-        <p>CDF Output</p>
-        <textarea id="cdf-output" data-bind="value: outputText"></textarea>
-      </div>
-    </section>
-    <footer>
-      CDF Converter is maintained by <a href="https://github.com/HiltonRoscoe">HiltonRoscoe</a><br>
-    </footer>
+  <div id="container"> 
+    <div class="inner">
+      <h1>CDF Converter</h1>
+      <hr />
+      <section>
+        <p>This tool allows a user to convert a NIST Common Data Format file from JSON to XML. More background on the
+          process is available here.</p>
+      </section>
+      <section id="tool">
+        <div id="controlPanel">
+          <input type="button" id="transformBtn" value="Transform" data-bind="click: transform" />
+          <input type="button" value="Load sample" />
+        </div>
+        <div id="transformOptions">
+          <label for="inputLanguageSel">Input Language</label>
+          <select id="inputLanguageSel">
+            <option value="json">JSON</option>
+          </select>
+          <label for="inputFormatSel">Input CDF</label>
+          <select id="inputFormatSel"
+            data-bind="options: supportedFormats, optionsText: 'name', optionsValue: 'value', value: commonDataFormat"></select>
+        </div>
+        <div class="input">
+          <h3>CDF Input</h3>
+          <textarea id="cdf-input" cols="92" rows="8" required="required" placeholder="Enter JSON input"
+            data-bind="value: inputText"></textarea>
+        </div>
+        <div class="output">
+          <h3>CDF Output</h3>
+          <textarea id="cdf-output" cols="92" rows="8" placeholder="XML output will appear here"
+            data-bind="value: outputText"></textarea>
+        </div>
+        <div>
+          <h3>Messages</h3>
+          <ul class="messages" data-bind="foreach: messages">
+            <li data-bind="text: message, class: severity"></li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        CDF Converter is maintained by <a href="https://github.com/HiltonRoscoe">HiltonRoscoe</a><br>
+      </footer>
+    </div>
   </div>
 </body>
 

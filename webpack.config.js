@@ -28,18 +28,33 @@ module.exports = {
                     'html-loader'
                 ]
             },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ],
+            },
         ]
     },
     devtool: 'source-map',
     resolve: {
-        extensions: [".tsx", ".ts" ]
+        extensions: [".tsx", ".ts"]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "./src/index.html")
         }),
         new CopyPlugin([
-          {  context: 'src', from: 'xslt/*.sef' },
+            { context: 'src', from: 'xslt/*.sef' },
         ]),
     ],
     optimization: {
