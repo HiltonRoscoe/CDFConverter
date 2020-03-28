@@ -3,7 +3,8 @@ import { CdfTransformer } from "./cdftransformer";
 import "./_sass/jekyll-theme-tactile.scss";
 import { Message } from "./message";
 // sample file for import, must appear at top?
-import sample from "./xml/cvr.json";
+import sampleData from "./xml/cvrv1_example1.json";
+import formatConfig from "./config.json";
 
 class CdfConverterViewModel {
     supportedFormats: ko.ObservableArray<any>
@@ -12,45 +13,38 @@ class CdfConverterViewModel {
     outputText: ko.Observable<string>
     messages: ko.ObservableArray<Message>
     transform() {
-        let formatSef = {
-            "errv20": {
-                "json2xml": "errv2_json2xml.sef",
-                "jsonschema": "",
-            },
-            "cvrv10": {
-                "json2xml": "cvrv1_json2xml.sef",
-                "example": "cvrv1_example1.json"
-            },
-            "eelv10": {
-                "json2xml": "eelv1_json2xml.sef"
-            }
-        };
-        let that = this;
         //incoming data from SaxonJS
         var transformCallback = (fragment: DocumentFragment) => {
             // have to convert to string?
             var div = document.createElement('div');
             div.appendChild(fragment.cloneNode(true));
             // replace existing output content
-            that.outputText(div.innerHTML);
-            that.messages.unshift(new Message("Conversion completed."));
+            this.outputText(div.innerHTML);
+            this.messages.unshift(new Message("Conversion completed."));
         }
-        const inputFormat = formatSef[this.commonDataFormat()].json2xml;
-        this.messages.unshift(new Message("Conversion started."));
-        CdfTransformer.transform(this.inputText(), inputFormat, transformCallback);
+        const inputFormat = formatConfig.filter(o => o.nameAbbreviation + o.version === this.commonDataFormat())[0];
+        if (inputFormat) {
+            this.messages.unshift(new Message("Conversion started."));
+            const sefFile = inputFormat.transforms.filter(o => o.name = "json2xml")[0].sef
+            CdfTransformer.transform(this.inputText(), sefFile, transformCallback);
+        }
     }
     constructor() {
-        this.supportedFormats = ko.observableArray([
-            { name: "Cast Vote Records v1.0", value: "cvrv10" },
-            { name: "Election Results Reporting v2.0", value: "errv20" }]);
+        const supportedFormats = formatConfig.map((o) => {
+            return { name: `${o.name} ${o.version}`, value: `${o.nameAbbreviation}${o.version}` }
+        });
+
+        this.supportedFormats = ko.observableArray(supportedFormats);
         this.commonDataFormat = ko.observable<string>("");
         this.inputText = ko.observable<string>("");
         this.outputText = ko.observable<string>("");
         this.messages = ko.observableArray([new Message("Tool initialized.")]);
     }
     loadSample() {
-        this.commonDataFormat("cvrv10")
-        this.inputText(JSON.stringify(sample));
+        const sampleFormat = "cvrv1.0.0";
+        this.commonDataFormat(sampleFormat)
+        // do pretty print
+        this.inputText(JSON.stringify(sampleData, null, 2));
         this.outputText("");
     }
 }

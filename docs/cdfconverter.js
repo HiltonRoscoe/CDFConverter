@@ -18925,49 +18925,42 @@ var cdftransformer_1 = __webpack_require__(/*! ./cdftransformer */ "./src/cdftra
 __webpack_require__(/*! ./_sass/jekyll-theme-tactile.scss */ "./src/_sass/jekyll-theme-tactile.scss");
 var message_1 = __webpack_require__(/*! ./message */ "./src/message.ts");
 // sample file for import, must appear at top?
-var cvr_json_1 = __importDefault(__webpack_require__(/*! ./xml/cvr.json */ "./src/xml/cvr.json"));
+var cvrv1_example1_json_1 = __importDefault(__webpack_require__(/*! ./xml/cvrv1_example1.json */ "./src/xml/cvrv1_example1.json"));
+var config_json_1 = __importDefault(__webpack_require__(/*! ./config.json */ "./src/config.json"));
 var CdfConverterViewModel = /** @class */ (function () {
     function CdfConverterViewModel() {
-        this.supportedFormats = ko.observableArray([
-            { name: "Cast Vote Records v1.0", value: "cvrv10" },
-            { name: "Election Results Reporting v2.0", value: "errv20" }
-        ]);
+        var supportedFormats = config_json_1.default.map(function (o) {
+            return { name: o.name + " " + o.version, value: "" + o.nameAbbreviation + o.version };
+        });
+        this.supportedFormats = ko.observableArray(supportedFormats);
         this.commonDataFormat = ko.observable("");
         this.inputText = ko.observable("");
         this.outputText = ko.observable("");
         this.messages = ko.observableArray([new message_1.Message("Tool initialized.")]);
     }
     CdfConverterViewModel.prototype.transform = function () {
-        var formatSef = {
-            "errv20": {
-                "json2xml": "errv2_json2xml.sef",
-                "jsonschema": "",
-            },
-            "cvrv10": {
-                "json2xml": "cvrv1_json2xml.sef",
-                "example": "cvrv1_example1.json"
-            },
-            "eelv10": {
-                "json2xml": "eelv1_json2xml.sef"
-            }
-        };
-        var that = this;
+        var _this = this;
         //incoming data from SaxonJS
         var transformCallback = function (fragment) {
             // have to convert to string?
             var div = document.createElement('div');
             div.appendChild(fragment.cloneNode(true));
             // replace existing output content
-            that.outputText(div.innerHTML);
-            that.messages.unshift(new message_1.Message("Conversion completed."));
+            _this.outputText(div.innerHTML);
+            _this.messages.unshift(new message_1.Message("Conversion completed."));
         };
-        var inputFormat = formatSef[this.commonDataFormat()].json2xml;
-        this.messages.unshift(new message_1.Message("Conversion started."));
-        cdftransformer_1.CdfTransformer.transform(this.inputText(), inputFormat, transformCallback);
+        var inputFormat = config_json_1.default.filter(function (o) { return o.nameAbbreviation + o.version === _this.commonDataFormat(); })[0];
+        if (inputFormat) {
+            this.messages.unshift(new message_1.Message("Conversion started."));
+            var sefFile = inputFormat.transforms.filter(function (o) { return o.name = "json2xml"; })[0].sef;
+            cdftransformer_1.CdfTransformer.transform(this.inputText(), sefFile, transformCallback);
+        }
     };
     CdfConverterViewModel.prototype.loadSample = function () {
-        this.commonDataFormat("cvrv10");
-        this.inputText(JSON.stringify(cvr_json_1.default));
+        var sampleFormat = "cvrv1.0.0";
+        this.commonDataFormat(sampleFormat);
+        // do pretty print
+        this.inputText(JSON.stringify(cvrv1_example1_json_1.default, null, 2));
         this.outputText("");
     };
     return CdfConverterViewModel;
@@ -19043,6 +19036,17 @@ exports.CdfTransformer = CdfTransformer;
 
 /***/ }),
 
+/***/ "./src/config.json":
+/*!*************************!*\
+  !*** ./src/config.json ***!
+  \*************************/
+/*! exports provided: 0, 1, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"Election Results Reporting\",\"nameAbbreviation\":\"err\",\"version\":\"v2.0.0\",\"transforms\":[{\"inputFormat\":\"json\",\"outputFormat\":\"xml\",\"name\":\"json2xml\",\"sef\":\"errv2_json2xml.sef\"}]},{\"name\":\"Cast Vote Records\",\"nameAbbreviation\":\"cvr\",\"version\":\"v1.0.0\",\"transforms\":[{\"name\":\"json2xml\",\"sef\":\"cvrv1_json2xml.sef\"}],\"example\":\"cvrv1_example1.json\"}]");
+
+/***/ }),
+
 /***/ "./src/images/body-bg.png":
 /*!********************************!*\
   !*** ./src/images/body-bg.png ***!
@@ -19109,10 +19113,10 @@ exports.Message = Message;
 
 /***/ }),
 
-/***/ "./src/xml/cvr.json":
-/*!**************************!*\
-  !*** ./src/xml/cvr.json ***!
-  \**************************/
+/***/ "./src/xml/cvrv1_example1.json":
+/*!*************************************!*\
+  !*** ./src/xml/cvrv1_example1.json ***!
+  \*************************************/
 /*! exports provided: CVR, Election, GeneratedDate, GpUnit, Notes, Party, ReportGeneratingDeviceIds, ReportType, ReportingDevice, Version, @type, default */
 /***/ (function(module) {
 
