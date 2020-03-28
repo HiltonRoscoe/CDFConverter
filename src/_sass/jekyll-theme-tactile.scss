@@ -375,6 +375,10 @@ footer a:hover {
       overflow-y: auto;
       width: 100%;
     }
+  
+    .error {
+      color: red;
+    }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }

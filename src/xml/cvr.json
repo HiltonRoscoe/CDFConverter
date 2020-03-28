@@ -1,0 +1,1837 @@
+{
+	"CVR": [
+		{
+			"BallotStyleId": "_01-0052-01",
+			"CreatingDeviceId": "rd",
+			"CurrentSnapshotId": "i__a_aaaaaago",
+			"CVRSnapshot": [
+				{
+					"@id": "i__a_aaaaaago",
+					"CVRContest": [
+						{
+							"ContestId": "_1GO",
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_99GO",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_2AG",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_3AS",
+							"CVRContestSelection": [
+								{
+									"ContestSelectionId": "_CS1CBB",
+									"OptionPosition": 1,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								}
+							],
+							"Overvotes": 0,
+							"Undervotes": 0,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_4SS",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_5TS",
+							"CVRContestSelection": [
+								{
+									"ContestSelectionId": "_CS1ECP",
+									"OptionPosition": 1,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								}
+							],
+							"Overvotes": 0,
+							"Undervotes": 0,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_6RC",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_8SR34",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_9CC",
+							"CVRContestSelection": [
+								{
+									"ContestSelectionId": "_CS1HIS",
+									"OptionPosition": 2,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								},
+								{
+									"ContestSelectionId": "_CS1HDW",
+									"OptionPosition": 3,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								},
+								{
+									"ContestSelectionId": "_CS1HJD",
+									"OptionPosition": 4,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								}
+							],
+							"Overvotes": 0,
+							"Undervotes": 0,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_10SB",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_11JS1",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_11JS2",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_12CA9",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_13CP1",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_14CP2",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_15CP3",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_16CP4",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_17CP5",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_18CP6",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_19CP7",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_20CP8",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_19CP9",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_22CP10",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_23ST",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_24CA1",
+							"CVRContestSelection": [
+								{
+									"ContestSelectionId": "_CS2DY",
+									"OptionPosition": 1,
+									"SelectionPosition": [
+										{
+											"HasIndication": "yes",
+											"IsAllocable": "yes",
+											"NumberVotes": 1,
+											"@type": "CVR.SelectionPosition"
+										}
+									],
+									"TotalNumberVotes": 1,
+									"@type": "CVR.CVRContestSelection"
+								}
+							],
+							"Overvotes": 0,
+							"Undervotes": 0,
+							"@type": "CVR.CVRContest"
+						},
+						{
+							"ContestId": "_25CA2",
+							"Overvotes": 0,
+							"Undervotes": 1,
+							"@type": "CVR.CVRContest"
+						}
+					],
+					"Type": "original",
+					"@type": "CVR.CVRSnapshot"
+				}
+			],
+			"ElectionId": "_AK2014General",
+			"@type": "CVR.CVR"
+		}
+	],
+	"Election": [
+		{
+			"@id": "_AK2014General",
+			"Candidate": [
+				{
+					"@id": "_1AEF",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1AEF",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Edward FitzGerald and Sharen\n\t\t\t\t\t\t\t\t\tSwartz Neuhardt",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1AJK",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1AJK",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John Kasich and \n\t\t\t\t\t\t\t\t\t\tMary Taylor",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1AAR",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1AAR",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Anita Rios and Bob\n\t\t\t\t\t\t\t\t\tFitrakis",
+					"PartyId": "_Green",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1BDP",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1BDP",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "David Pepper",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1BMD",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1BMD",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Mike DeWine",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1CBB",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1CBB",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Bob Bridges",
+					"PartyId": "_Libertarian",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1CJC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1CJC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John Patrick\n\t\t\t\t\t\t\t\t\tCarney",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1CDY",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1CDY",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "David Yost",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1DJH",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1DJH",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Jon Husted",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1DKK",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1DKK",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Kevin Knedler",
+					"PartyId": "_Libertarian",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1DNT",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1DNT",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Nina Turner",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1ECP",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1ECP",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Connie Pillich",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1EJM",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1EJM",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Josh Mandel",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1FMZ",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1FMZ",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Mark Zetzer",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1FMF",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1FMF",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Marcia L. Fudge",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1GCB",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1GCB",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Cynthia D. Blake",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1GES",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1GES",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Emilia Sykes",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HBR",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HBR",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Bill Roemer",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HIS",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HIS",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Ilene Shapiro",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HDW",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HDW",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Debbie Walsh",
+					"PartyId": "_Republican",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HJD",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HJD",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John A. Donofrio",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HGH",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HGH",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Gary Hagen",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1HSK",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1HSK",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Sandra Kurt",
+					"PartyId": "_Democratic",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1IDS",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1IDS",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "David A. Spencer",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1IMC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1IMC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Michael Charney",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1ISF",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1ISF",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Sarah E. Fowler",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1ISR",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1ISR",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Sarah Freeman",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1JTL",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1JTL",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Tom Letson",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1JSK",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1JSK",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Sharon Kennedy",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1KJO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1KJO",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John P. O'Donnell",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1KJF",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1KJF",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Judi French",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1LTL",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1LTL",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Julie A. Schafer",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1LEB",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1LEB",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Eve Belfance",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1MTO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1MTO",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Tammy O'Brien",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1MRC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1MRC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Ron Cable",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1NTG",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1NTG",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Tavia Baxter\n\t\t\t\t\t\t\t\t\tGalonski",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1NLC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1NLC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Lynne S. Callahan",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1OAM",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1OAM",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Alison McCarty",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1OLD",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1OLD",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Lisa Dean",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1PBW",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1PBW",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Beth Whitmore",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1PMR",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1PMR",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Mary Margaret\n\t\t\t\t\t\t\t\t\tRowlands",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1QCC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1QCC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Christine Croce",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1QJC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1QJC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John Clark",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1RTP",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1RTP",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Tom Parker",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1RRM",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1RRM",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Rob McCarty",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1SJO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1SJO",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Jon Oldham",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1TM",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1TM",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Todd McKenney",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1TLT",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1TLT",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Linda Tucci\n\t\t\t\t\t\t\t\t\tTeodosio",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1TJL",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1TJL",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Jill Flagg\n\t\t\t\t\t\t\t\t\tLanzinger",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1UJQ",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1UJQ",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "John P. Quinn",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1UKC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1UKC",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Katarina Cook",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1VES",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1VES",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Elinore Marsh\n\t\t\t\t\t\t\t\t\tStormer",
+					"@type": "CVR.Candidate"
+				},
+				{
+					"@id": "_1VKO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1VKO",
+							"@type": "CVR.Code"
+						}
+					],
+					"Name": "Kandi S. C'Connor",
+					"@type": "CVR.Candidate"
+				}
+			],
+			"Code": [
+				{
+					"Type": "local-level",
+					"Value": "2014-11-04G",
+					"@type": "CVR.Code"
+				}
+			],
+			"Contest": [
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_1GO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "1GO",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1AEF"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1AEF"
+						},
+						{
+							"CandidateIds": [
+								"_1AJK"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1AJK"
+						},
+						{
+							"CandidateIds": [
+								"_1AAR"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1AAR"
+						}
+					],
+					"Name": "For Governor and Lieutenant Governor",
+					"VoteVariation": "rcv"
+				},
+				{
+					"@type": "CVR.PartyContest",
+					"@id": "_99GO",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "99GO",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"PartyIds": [
+								"_Democratic"
+							],
+							"@type": "CVR.PartySelection",
+							"@id": "_CSDemocratic"
+						},
+						{
+							"PartyIds": [
+								"_Republican"
+							],
+							"@type": "CVR.PartySelection",
+							"@id": "_CSRepublican"
+						},
+						{
+							"PartyIds": [
+								"_Green"
+							],
+							"@type": "CVR.PartySelection",
+							"@id": "_CSGreen"
+						}
+					],
+					"Name": "Straight Party Voting",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_2AG",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "2AG",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1BDP"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1BDP"
+						},
+						{
+							"CandidateIds": [
+								"_1BMD"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1BMD"
+						}
+					],
+					"Name": "For Attorney General",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_3AS",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "3AS",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1CBB"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1CBB"
+						},
+						{
+							"CandidateIds": [
+								"_1CJC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1CJC"
+						},
+						{
+							"CandidateIds": [
+								"_1CDY"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1CDY"
+						}
+					],
+					"Name": "For Auditor of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_4SS",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "4SS",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1DJH"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1DJH"
+						},
+						{
+							"CandidateIds": [
+								"_1DKK"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1DKK"
+						},
+						{
+							"CandidateIds": [
+								"_1DNT"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1DNT"
+						}
+					],
+					"Name": "For Secretary of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_5TS",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "5TS",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1ECP"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1ECP"
+						},
+						{
+							"CandidateIds": [
+								"_1EJM"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1EJM"
+						}
+					],
+					"Name": "For Treasurer of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_6RC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "6RC",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1FMZ"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1FMZ"
+						},
+						{
+							"CandidateIds": [
+								"_1FMF"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1FMF"
+						}
+					],
+					"Name": "For Representative to\n\t\t\t\t\t\t\t\tCongress(11th District)",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_8SR34",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "8SR34",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1GCB"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1GCB"
+						},
+						{
+							"CandidateIds": [
+								"_1GES"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1GES"
+						}
+					],
+					"Name": "For State\n\t\t\t\t\t\t\t\tRepresentative(34th District)",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 3,
+					"@type": "CVR.CandidateContest",
+					"@id": "_9CC",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "9CC",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1HBR"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HBR"
+						},
+						{
+							"CandidateIds": [
+								"_1HIS"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HIS"
+						},
+						{
+							"CandidateIds": [
+								"_1HDW"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HDW"
+						},
+						{
+							"CandidateIds": [
+								"_1HJD"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HJD"
+						},
+						{
+							"CandidateIds": [
+								"_1HGH"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HGH"
+						},
+						{
+							"CandidateIds": [
+								"_1HSK"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1HSK"
+						}
+					],
+					"Name": "For Member of  County\n\t\t\t\t\t\t\t\tCouncil at Large",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_10SB",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "10SB",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1IDS"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1IDS"
+						},
+						{
+							"CandidateIds": [
+								"_1IMC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1IMC"
+						},
+						{
+							"CandidateIds": [
+								"_1ISF"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1ISF"
+						},
+						{
+							"CandidateIds": [
+								"_1ISR"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1ISR"
+						}
+					],
+					"Name": "For Member of State Board of\n\t\t\t\t\t\t\t\tEducation(7th District)",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_11JS1",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "11JS1",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1JTL"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1JTL"
+						},
+						{
+							"CandidateIds": [
+								"_1JSK"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1JSK"
+						}
+					],
+					"Name": "For Justice of the Supreme Court\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/1\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_11JS2",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "11JS2",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1KJO"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1KJO"
+						},
+						{
+							"CandidateIds": [
+								"_1KJF"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1KJF"
+						}
+					],
+					"Name": "For Justice of the Supreme Court\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/2\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_12CA9",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "12CA9",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1LTL"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1LTL"
+						},
+						{
+							"CandidateIds": [
+								"_1LEB"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1LEB"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\tAppeals(9th District)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 2\/9\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_13CP1",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "13CP1",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1MTO"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1MTO"
+						},
+						{
+							"CandidateIds": [
+								"_1MRC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1MRC"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/2\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_14CP2",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "14CP2",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1NTG"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1NTG"
+						},
+						{
+							"CandidateIds": [
+								"_1NLC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1NLC"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/3\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_15CP3",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "15CP3",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1OAM"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1OAM"
+						},
+						{
+							"CandidateIds": [
+								"_1OLD"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1OLD"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/5\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_16CP4",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "16CP4",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1PBW"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1PBW"
+						},
+						{
+							"CandidateIds": [
+								"_1PMR"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1PMR"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/6\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_17CP5",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "17CP5",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1QCC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1QCC"
+						},
+						{
+							"CandidateIds": [
+								"_1QJC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1QJC"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 2\/9\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_18CP6",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "18CP6",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1RTP"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1RTP"
+						},
+						{
+							"CandidateIds": [
+								"_1RRM"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1RRM"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 5\/1\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_19CP7",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "19CP7",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1SJO"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1SJO"
+						},
+						{
+							"CandidateIds": [
+								"_1TM"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1TM"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/4\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_20CP8",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "20CP8",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1TLT"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1TLT"
+						},
+						{
+							"CandidateIds": [
+								"_1TJL"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1TJL"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Juvenile Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/1\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_19CP9",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "19CP9",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1UJQ"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1UJQ"
+						},
+						{
+							"CandidateIds": [
+								"_1UKC"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1UKC"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Domestic Relations Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/4\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "CVR.CandidateContest",
+					"@id": "_22CP10",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "22CP10",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"CandidateIds": [
+								"_1VES"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1VES"
+						},
+						{
+							"CandidateIds": [
+								"_1VKO"
+							],
+							"@type": "CVR.CandidateSelection",
+							"@id": "_CS1VKO"
+						}
+					],
+					"Name": "For Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Probate Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1\/4\/2015\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"@type": "CVR.BallotMeasureContest",
+					"@id": "_23ST",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "23ST",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"Selection": "YES",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS1DY"
+						},
+						{
+							"Selection": "NO",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS1DN"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\t12 Proposed\n\t\t\t\t\t\t\t\t\tSales and Use Tax County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"@type": "CVR.BallotMeasureContest",
+					"@id": "_24CA1",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "24CA1",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"Selection": "YES",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS2DY"
+						},
+						{
+							"Selection": "NO",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS2DN"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\t13  Proposed\n\t\t\t\t\t\t\t\t\tCharter Amendment  County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"@type": "CVR.BallotMeasureContest",
+					"@id": "_25CA2",
+					"Code": [
+						{
+							"Type": "local-level",
+							"Value": "25CA2",
+							"@type": "CVR.Code"
+						}
+					],
+					"ContestSelection": [
+						{
+							"Selection": "YES",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS3DY"
+						},
+						{
+							"Selection": "NO",
+							"@type": "CVR.BallotMeasureSelection",
+							"@id": "_CS3DN"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\t14  Proposed\n\t\t\t\t\t\t\t\t\tCharter Amendment  County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				}
+			],
+			"ElectionScopeId": "gpu-precinct",
+			"Name": "2014 General Election",
+			"@type": "CVR.Election"
+		}
+	],
+	"GeneratedDate": "2018-07-15T00:00:00Z",
+	"GpUnit": [
+		{
+			"@id": "gpu-precinct",
+			"Code": [
+				{
+					"Type": "local-level",
+					"Value": "77",
+					"@type": "CVR.Code"
+				}
+			],
+			"Type": "precinct",
+			"@type": "CVR.GpUnit"
+		}
+	],
+	"Notes": "Example using the NIST CVR CDF",
+	"Party": [
+		{
+			"@id": "_Democratic",
+			"Name": "Democratic",
+			"@type": "CVR.Party"
+		},
+		{
+			"@id": "_Green",
+			"Name": "Green",
+			"@type": "CVR.Party"
+		},
+		{
+			"@id": "_Libertarian",
+			"Name": "Libertarian",
+			"@type": "CVR.Party"
+		},
+		{
+			"@id": "_Republican",
+			"Name": "Republican",
+			"@type": "CVR.Party"
+		},
+		{
+			"@id": "_",
+			"@type": "CVR.Party"
+		}
+	],
+	"ReportGeneratingDeviceIds": [
+		"rd"
+	],
+	"ReportType": [
+		"originating-device-export"
+	],
+	"ReportingDevice": [
+		{
+			"@id": "rd",
+			"Application": "Ballot Marker",
+			"Manufacturer": "Hilton Roscoe LLC",
+			"@type": "CVR.ReportingDevice"
+		}
+	],
+	"Version": "1.0.0",
+	"@type": "CVR.CastVoteRecordReport"
+}
