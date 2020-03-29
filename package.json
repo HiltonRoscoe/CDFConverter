@@ -7,11 +7,9 @@
     "lib": "lib"
   },
   "dependencies": {
-    "codemirror": "^5.51.0",
     "knockout": "^3.5.1"
   },
   "devDependencies": {
-    "@types/codemirror": "0.0.87",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "html-loader": "^1.0.0",
@@ -19,19 +17,21 @@
     "node-sass": "^4.13.1",
     "raw-loader": "^4.0.0",
     "sass-loader": "^8.0.2",
+    "static-server": "^2.2.1",
     "style-loader": "^1.1.3",
-    "ts-loader": "^6.2.1",
+    "ts-loader": "^6.2.2",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3",
     "url-loader": "^4.0.0",
-    "webpack": "^4.42.0",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
+    "start": "static-server ./docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "The Turnout LLC <john@turnout.rocks>",
+  "author": "Hilton Roscoe LLC <john@hiltonroscoe.com>",
   "license": "MIT"
 }
