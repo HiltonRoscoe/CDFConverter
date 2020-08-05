@@ -47,7 +47,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: [".tsx", ".ts"]
+        extensions: [".tsx", ".ts", ".js"]
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -59,5 +59,8 @@ module.exports = {
     ],
     optimization: {
         minimize: false
+    },
+    node: {
+        fs: 'empty'
     }
 };
