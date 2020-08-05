@@ -19043,7 +19043,7 @@ exports.CdfTransformer = CdfTransformer;
 /*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Election Results Reporting\",\"nameAbbreviation\":\"err\",\"version\":\"v2.0.0\",\"transforms\":[{\"inputFormat\":\"json\",\"outputFormat\":\"xml\",\"name\":\"json2xml\",\"sef\":\"errv2_json2xml.sef\"}]},{\"name\":\"Cast Vote Records\",\"nameAbbreviation\":\"cvr\",\"version\":\"v1.0.0\",\"transforms\":[{\"name\":\"json2xml\",\"sef\":\"cvrv1_json2xml.sef\"}],\"example\":\"cvrv1_example1.json\"}]");
+module.exports = JSON.parse("[{\"name\":\"Election Results Reporting\",\"nameAbbreviation\":\"err\",\"version\":\"v2.0.0\",\"schemas\":[{\"format\":\"json-schema\",\"uri\":\"\"}],\"transforms\":[{\"inputFormat\":\"json\",\"outputFormat\":\"xml\",\"name\":\"json2xml\",\"sef\":\"errv2_json2xml.sef\"}]},{\"name\":\"Cast Vote Records\",\"nameAbbreviation\":\"cvr\",\"version\":\"v1.0.0\",\"transforms\":[{\"name\":\"json2xml\",\"sef\":\"cvrv1_json2xml.sef\"}],\"example\":\"cvrv1_example1.json\"}]");
 
 /***/ }),
 
