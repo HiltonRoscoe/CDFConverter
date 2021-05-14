@@ -25,7 +25,7 @@
         "transforms": [
             {
                 "name": "json2xml",
-                "sef": "cvrv1_json2xml.sef"
+                "sef": "cvr_v1_json2xml.sef.json"                        
             }
         ],
         "example": "cvrv1_example1.json"

@@ -54,7 +54,7 @@ module.exports = {
             template: path.resolve(__dirname, "./src/index.html")
         }),
         new CopyPlugin([
-            { context: 'src', from: 'xslt/*.sef' },
+            { context: 'src', from: 'xslt/*.json' },
         ]),
     ],
     optimization: {

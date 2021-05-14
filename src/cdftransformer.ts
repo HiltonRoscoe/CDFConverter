@@ -8,7 +8,6 @@ export class CdfTransformer {
         // wrap the JSON in XML, as required by XSLT transform
         let wrappedJson = `<root xmlns="http://www.w3.org/2005/xpath-functions">${inputStr}</root>`;
         // this is a workaround to handle the XPathJS's need to access SaxonJS.
-        debugger;
         saxon.transform({
             // sourceLocation: "xslt/err_xml2json_out.xml",
             sourceText: wrappedJson,
