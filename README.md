@@ -24,7 +24,7 @@ This tool provides an web-based example of how the developed [XML and JSON conve
 
 - This tool runs completely in the browser. Because of this, supported file sizes and speed is dependant on your local computer's configuration.
 - The program is not designed for the transformation of large files, please use a desktop XSLT engine.
-- The tool currently only supports XML-to-JSON conversions. Please see [here][formatconversion] for information on performing XML-to-JSON conversions.
+- The tool currently only supports JSON-to-XML conversions. Please see [here][formatconversion] for information on performing XML-to-JSON conversions.
 - The tool currently only supports NIST CVR and ERR CDF specifications.
 
 ## Licensing
