@@ -9,7 +9,7 @@
   "dependencies": {
     "clean": "^4.0.2",
     "knockout": "^3.5.1",
-    "saxon-js": "^2.2.0"
+    "saxon-js": "^2.5.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.2",
